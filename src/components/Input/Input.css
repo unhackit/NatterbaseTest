@@ -1,0 +1,20 @@
+label {
+    font-size:12px;
+    letter-spacing: 1.25px;
+    color:#4C0032;
+    display:block;
+}
+
+input {
+    font-size:14px;
+    color:#777777;
+    border:1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width:100%;
+}
+
+.enabled {
+    border:1px solid #EBDACE;
+    background: rgba(235, 218, 206, 0.2);
+}

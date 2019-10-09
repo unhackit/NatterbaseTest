@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border: none
+}
+.table-container {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+caption {
+    caption-side: top;
+    color: #4D0032;
+    font-size:18px;
+    padding: 10px;
+}
+
+.table th, .table td {
+    border: none;
+}

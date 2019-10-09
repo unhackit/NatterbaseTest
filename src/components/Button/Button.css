@@ -1,0 +1,51 @@
+.btn {
+    border-radius:2px; 
+}
+
+
+.settings {
+    background: #F58634;
+    color:#fff;
+}
+
+.settings:hover{
+    background: #fff;
+    color: #F58634;
+    border: 1px solid #F58634;
+}
+
+.statusTrue {
+    color: #6ADD0E;
+    background: rgba(106, 221, 14, 0.2);
+    border-radius: 2px;
+    list-style-type: disc;
+}
+
+.statusTrue:hover {
+    color: #6ADD0E;
+    background: rgba(106, 221, 14, 0.2);
+    border-radius: 2px;
+}
+
+.statusFalse {
+    background: rgba(253, 82, 98, 0.2);
+    border-radius: 2px;
+    color: #FD5262;
+}
+.statusFalse:hover {
+    background: rgba(253, 82, 98, 0.2);
+    border-radius: 2px;
+    color: #FD5262;
+}
+
+.action {
+    background: #F58634;
+    color:#fff;
+    min-width: 80%;
+}
+
+.action:hover{
+    background: #fff;
+    color: #F58634;
+    border: 1px solid #F58634;
+}
