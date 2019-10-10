@@ -26,7 +26,7 @@ const Navbar = () => (
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown ">
                         <a className="nav-link" href="#navbarDropdownMenuLink" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img alt="profile pic" src={require("../../Assets/Img/Profile.png")} /> Lois Dorello <i class="fas fa-chevron-down"></i>
+                            <img alt="profile pic" src={require("../../Assets/Img/Profile.png")} /> Lois Dorello <i className="fas fa-chevron-down"></i>
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a className="dropdown-item" href="/">Action</a>

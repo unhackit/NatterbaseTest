@@ -6,7 +6,7 @@ const formatAsMoney = (data) => {
     return data = '₦' + data
 }
 
-const Box = ({title, img , data , bg}) => (
+const Box = ({title, bg, img, data}) => (
     <div className="col-sm-12 col-md-6 col-lg-3 mt-2 mb-2">
         <div className={`box ${bg}`}>
             <div className="container-fluid">
@@ -21,5 +21,6 @@ const Box = ({title, img , data , bg}) => (
         </div>
     </div>
 )
+
 
 export default Box;
