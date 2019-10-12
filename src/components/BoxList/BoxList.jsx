@@ -7,6 +7,7 @@ import axios from 'axios';
 
 import { connect } from 'react-redux';
 import { setSummaryData } from '../../redux/summary/summary.actions';
+import { boxData } from '../../box.data';
 
 class BoxList extends React.Component {
 
@@ -18,18 +19,16 @@ class BoxList extends React.Component {
             token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjYjg2NWZmMzFhZWRkMzQxNDU0OTQ2YiIsImlhdCI6MTU2NTk0Nzg1NCwiZXhwIjoxNTY1OTU1MDU0fQ.5ujc_dMloqYdyoQN556PhGwIqa1OfGwt06vD5iKu-lg'
           }
         })
-          .then(response => this.setValue(response.data.statistics)
+          .then(response => this.props.setSummaryData(Object.values(response.data.statistics))
          ).catch(error => console.log(error))
     }
 
-    setValue = (data) => {
-        console.log(data)
-    }
+    
+
 
     renderSummary = () => {
         return this.props.summaryData.map((item, i) => {
-            const { title, img, bg, data } = item
-            return <Box key={i} title={title} img={img} bg={bg} data={data}/>
+            return <Box key={i} item={item} bg={boxData[i].bg} img={boxData[i].img} title={boxData[i].title}/>
         })
     }
     
@@ -38,7 +37,7 @@ class BoxList extends React.Component {
         return(
             <div className="container-fluid">
                 <div className="row pb-3">
-                        {this.renderSummary()}
+                    {this.renderSummary()}
                 </div>
             </div>
         )

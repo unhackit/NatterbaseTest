@@ -6,7 +6,7 @@ const formatAsMoney = (data) => {
     return data = '₦' + data
 }
 
-const Box = ({title, bg, img, data}) => (
+const Box = ({title, bg, img, item}) => (
     <div className="col-sm-12 col-md-6 col-lg-3 mt-2 mb-2">
         <div className={`box ${bg}`}>
             <div className="container-fluid">
@@ -14,7 +14,7 @@ const Box = ({title, bg, img, data}) => (
                     <img alt="total-icon" src={require(`../../Assets/Img/${img}`)}/>
                 </div>
                 <div>
-                    <p className="total-number mt-2">{title.includes('Amount') ? formatAsMoney(data) : data }</p>
+                    {<p className="total-number mt-2">{title.includes('Amount') ? formatAsMoney(item) : item }</p>}
                     <p className="total">{title}</p>
                 </div>
             </div>

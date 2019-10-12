@@ -32,3 +32,22 @@ caption {
     text-decoration-line: underline;
     color: #4D0032;
 }
+
+.tip {
+    position: relative;
+    right:20px;
+    bottom: -30px;
+    font-size: 14px;
+    color: #4D0032;
+    font-weight: lighter;
+    background: #FFFFFF;
+    border: 0.1px solid #1D1D1D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 2px;
+    width: 8%;
+    padding: 10px 3px 0 10px;
+}
+
+.tip p:nth-child(1){
+    border-bottom: 0.2px solid #B9B8B8;
+}
